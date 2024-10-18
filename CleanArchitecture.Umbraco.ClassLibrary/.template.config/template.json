@@ -1,0 +1,48 @@
+﻿{
+  "author": "Sebastian Müller",
+  "name": "Clean Architecture Umbraco Class Library",
+  "description": "A simple scaffold for a Clean Architecture layer setup in Umbraco.",
+  "identity": "CleanArchitecture.Umbraco.ClassLibrary",
+  "shortName": "cleanArchUmbLib",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "CleanArchitecture.Umbraco.ClassLibrary",
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "net8.0"
+        },
+        {
+          "choice": "net7.0"
+        },
+        {
+          "choice": "net6.0"
+        }
+      ],
+      "defaultValue": "net8.0"
+    },
+    "Layer": {
+      "type": "parameter",
+      "description": "The name of the layer.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "Application"
+        },
+        {
+          "choice": "Domain"
+        },
+        {
+          "choice": "Infrastructure"
+        }
+      ],
+      "replaces":"Layer"
+    }
+  }
+}
